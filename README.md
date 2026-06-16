@@ -40,7 +40,6 @@ storing it in the database:
 
 ```php
 putenv("GITHUB_COPILOT_TOKEN=the_token_here" );
-
 ```
 
 Do not hard-code real tokens in plugin files or commit them to source control.
