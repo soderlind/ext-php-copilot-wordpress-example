@@ -39,9 +39,8 @@ For local development only, you can provide it from `wp-config.php` without
 storing it in the database:
 
 ```php
-add_filter('ext_php_copilot_wp_example_token', static function (?string $token): ?string {
-    return $token ?: getenv('GITHUB_COPILOT_TOKEN') ?: null;
-});
+putenv("GITHUB_COPILOT_TOKEN=the_token_here" );
+
 ```
 
 Do not hard-code real tokens in plugin files or commit them to source control.
